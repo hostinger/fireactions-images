@@ -1,0 +1,17 @@
+{
+  "group-pull-request-title-pattern": "chore: Release ${branch}",
+  "bump-minor-pre-major": true,
+  "tag-separator": "/",
+  "sequential-calls": false,
+  "monorepo-tags": true,
+  "packages": {
+    "ubuntu2204": {
+      "release-type": "simple",
+      "package-name": "ubuntu2204"
+    },
+    "ubuntu2004": {
+      "release-type": "simple",
+      "package-name": "ubuntu2004"
+    }
+  }
+}
