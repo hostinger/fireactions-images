@@ -5,13 +5,13 @@
   "sequential-calls": false,
   "monorepo-tags": true,
   "packages": {
-    "ubuntu2204": {
+    "ubuntu22.04": {
       "release-type": "simple",
-      "package-name": "ubuntu2204"
+      "package-name": "ubuntu22.04"
     },
-    "ubuntu2004": {
+    "ubuntu20.04": {
       "release-type": "simple",
-      "package-name": "ubuntu2004"
+      "package-name": "ubuntu20.04"
     }
   }
 }
