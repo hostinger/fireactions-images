@@ -51,6 +51,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
+        provenance: false
         context: "${{ needs.environment.outputs.package }}"
         file: "${{ needs.environment.outputs.package }}/Dockerfile"
         push: true
