@@ -7,7 +7,7 @@ on:
 permissions:
   packages: write
   contents: write
-  id-token: read
+  id-token: write
 
 jobs:
   amd64:
