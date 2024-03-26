@@ -36,15 +36,3 @@ jobs:
         base: main
         branch: feat/update-runner-version
         delete-branch: true
-
-    - name: Setup GH CLI
-      if: ${{ steps.pr.outputs.pull-request-number }}
-      uses: sersoft-gmbh/setup-gh-cli-action@v2
-      with:
-        version: stable
-
-    - name: Enable Pull Request Automerge
-      if: ${{ steps.pr.outputs.pull-request-number }}
-      run: gh pr merge --squash --auto "${{ steps.pr.outputs.pull-request-number }}"
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
