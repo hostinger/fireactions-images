@@ -23,7 +23,7 @@ jobs:
 
     - name: Bump runner version
       run: |
-        find . -type f -name "Dockerfile" -exec sed -i '' 's/ARG RUNNER_VERSION="[^"]*"/ARG RUNNER_VERSION="${{ env.RUNNER_LATEST }}"/g' {} \;
+        find . -type f -name "Dockerfile" -exec sed -i 's/ARG RUNNER_VERSION="[^"]*"/ARG RUNNER_VERSION="${{ env.RUNNER_LATEST }}"/g' {} \;
 
     - name: Create Pull Request
       id: pr
