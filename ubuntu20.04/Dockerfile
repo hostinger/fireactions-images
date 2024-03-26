@@ -1,7 +1,7 @@
 FROM ghcr.io/hostinger/fireactions:0.1.1 AS fireactions
 FROM ubuntu:20.04
 
-ARG RUNNER_VERSION="2.314.1"
+ARG RUNNER_VERSION="2.315.0"
 ARG TARGETARCH
 
 ENV DEBIAN_FRONTEND=noninteractive
