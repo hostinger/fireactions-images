@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/hostinger/fireactions-images/compare/ubuntu22.04/v0.5.0...ubuntu22.04/v0.5.1) (2024-08-22)
+
+
+### Bug Fixes
+
+* Upgrade to fireactions-v0.2.3 ([#11](https://github.com/hostinger/fireactions-images/issues/11)) ([2c8896d](https://github.com/hostinger/fireactions-images/commit/2c8896d72bdb80440c8ac1ea93b54f1b494678c6))
+
 ## [0.5.0](https://github.com/hostinger/fireactions-images/compare/ubuntu22.04/v0.4.0...ubuntu22.04/v0.5.0) (2024-08-22)
 
 
