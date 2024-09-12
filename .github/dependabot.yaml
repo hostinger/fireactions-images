@@ -1,7 +1,16 @@
 ---
 version: 2
 updates:
-- package-ecosystem: "docker"
-  directory: "/"
-  schedule:
-    interval: "daily"
+  - package-ecosystem: "docker" # See documentation for possible values
+    directories:
+      - "/" # Location of package manifests
+      - "/ubuntu20.04"
+      - "/ubuntu22.04"
+      - "*/**"
+    labels:
+      - "dependencies"
+      - "docker"
+    reviewers:
+      - "hostinger/cloudops-team"
+    schedule:
+      interval: "daily" 
