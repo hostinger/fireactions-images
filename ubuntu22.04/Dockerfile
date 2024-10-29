@@ -71,7 +71,7 @@ RUN install -m 0755 -d /etc/apt/keyrings                                        
     && apt-get clean && rm -rf /var/lib/apt/lists/*                                                                 \
     && systemctl enable docker.service
 
-RUN echo 'root:root' | chpasswd                                                                   \
+RUN echo 'root:fireactions' | chpasswd                                                                   \
     && sed -i -e 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
     && sed -i -e 's/^AcceptEnv LANG LC_\*$/#AcceptEnv LANG LC_*/'            /etc/ssh/sshd_config
 
