@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://github.com/hostinger/fireactions-images/compare/ubuntu20.04/v0.5.1...ubuntu20.04/v0.6.0) (2024-11-02)
+
+
+### Features
+
+* Bump Github actions self-hosted runner version ([#15](https://github.com/hostinger/fireactions-images/issues/15)) ([ce1c8ef](https://github.com/hostinger/fireactions-images/commit/ce1c8ef0d9f5b8a263ce63ab65ae5aeab1fdd29e))
+
+
+### Bug Fixes
+
+* Change default root password ([#17](https://github.com/hostinger/fireactions-images/issues/17)) ([eb3f6d5](https://github.com/hostinger/fireactions-images/commit/eb3f6d53044ee7b76d0850cbb8dbd260da56ee30))
+
 ## [0.5.1](https://github.com/hostinger/fireactions-images/compare/ubuntu20.04/v0.5.0...ubuntu20.04/v0.5.1) (2024-08-22)
 
 
