@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/hostinger/fireactions-images/compare/ubuntu22.04/v0.6.0...ubuntu22.04/v0.7.0) (2024-11-02)
+
+
+### Features
+
+* Use fireactions v0.2.5 ([2414ac2](https://github.com/hostinger/fireactions-images/commit/2414ac2165c894386a4304aa3866d92a14c64c41))
+
 ## [0.6.0](https://github.com/hostinger/fireactions-images/compare/ubuntu22.04/v0.5.1...ubuntu22.04/v0.6.0) (2024-11-02)
 
 
