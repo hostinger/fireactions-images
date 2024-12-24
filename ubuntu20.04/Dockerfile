@@ -1,4 +1,4 @@
-FROM ghcr.io/hostinger/fireactions:0.2.7 AS fireactions
+FROM ghcr.io/hostinger/fireactions:0.2.8 AS fireactions
 FROM ubuntu:20.04
 
 ARG RUNNER_VERSION="2.321.0"
