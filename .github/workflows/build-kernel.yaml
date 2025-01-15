@@ -21,7 +21,7 @@ jobs:
       image: ghcr.io/konradasb/docker-kernel-build:e89c0048a44398df9e63081c20c2ffbdea06dae6
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Login to Google Cloud Platform
       uses: google-github-actions/auth@v1
@@ -64,7 +64,7 @@ jobs:
       image: ghcr.io/konradasb/docker-kernel-build:e89c0048a44398df9e63081c20c2ffbdea06dae6
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Login to Google Cloud Platform
       uses: google-github-actions/auth@v1
