@@ -27,7 +27,6 @@ jobs:
       uses: google-github-actions/auth@v1
       with:
         workload_identity_provider: projects/37500578404/locations/global/workloadIdentityPools/github/providers/hostinger
-        service_account: gha-fireactions-images@hostinger-systems.iam.gserviceaccount.com
 
     - name: Setup Google Cloud SDK
       uses: google-github-actions/setup-gcloud@v1
@@ -70,7 +69,6 @@ jobs:
       uses: google-github-actions/auth@v1
       with:
         workload_identity_provider: projects/37500578404/locations/global/workloadIdentityPools/github/providers/hostinger
-        service_account: gha-fireactions-images@hostinger-systems.iam.gserviceaccount.com
 
     - name: Setup Google Cloud SDK
       uses: google-github-actions/setup-gcloud@v1
