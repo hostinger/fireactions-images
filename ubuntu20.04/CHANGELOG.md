@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/hostinger/fireactions-images/compare/ubuntu20.04/v0.8.0...ubuntu20.04/v0.9.0) (2025-02-19)
+
+
+### Features
+
+* Bump Github actions self-hosted runner version ([#35](https://github.com/hostinger/fireactions-images/issues/35)) ([0cde805](https://github.com/hostinger/fireactions-images/commit/0cde805b2f407b85a63e4e86b4c3369c184a9757))
+
 ## [0.8.0](https://github.com/hostinger/fireactions-images/compare/ubuntu20.04/v0.7.0...ubuntu20.04/v0.8.0) (2024-11-13)
 
 
