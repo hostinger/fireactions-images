@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/hostinger/fireactions-images/compare/ubuntu22.04/v0.9.0...ubuntu22.04/v0.10.0) (2025-03-24)
+
+
+### Features
+
+* Bump Github actions self-hosted runner version ([#40](https://github.com/hostinger/fireactions-images/issues/40)) ([5f51943](https://github.com/hostinger/fireactions-images/commit/5f519435b3e44b3af92f6b968df73640f163357c))
+
 ## [0.9.0](https://github.com/hostinger/fireactions-images/compare/ubuntu22.04/v0.8.0...ubuntu22.04/v0.9.0) (2025-02-19)
 
 
