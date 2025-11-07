@@ -71,6 +71,14 @@ RUN install -m 0755 -d /etc/apt/keyrings                                        
     && apt-get clean && rm -rf /var/lib/apt/lists/*                                                                 \
     && systemctl enable docker.service
 
+RUN install -m 0755 -d /etc/apt/keyrings                                                                                           \
+    && curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | gpg --dearmor -o /etc/apt/keyrings/githubcli.gpg \
+    && chmod a+r /etc/apt/keyrings/githubcli.gpg                                                                                   \
+    && echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli.gpg]                                     \
+            https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null                 \
+    && apt-get update && apt-get install --no-install-recommends -y gh                                                             \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 RUN echo 'root:fireactions' | chpasswd                                                                   \
     && sed -i -e 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
     && sed -i -e 's/^AcceptEnv LANG LC_\*$/#AcceptEnv LANG LC_*/'            /etc/ssh/sshd_config
