@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.14.0](https://github.com/hostinger/fireactions-images/compare/ubuntu20.04/v0.13.0...ubuntu20.04/v0.14.0) (2025-11-07)
+
+
+### Features
+
+* Bump Github actions self-hosted runner version ([#54](https://github.com/hostinger/fireactions-images/issues/54)) ([a4fe795](https://github.com/hostinger/fireactions-images/commit/a4fe7955a9f808bdd16c6b25c887ee12b6d41be4))
+* Install GitHub CLI ([#56](https://github.com/hostinger/fireactions-images/issues/56)) ([db2b96a](https://github.com/hostinger/fireactions-images/commit/db2b96a99d937c2eb231de113da42214e337e47d))
+
 ## [0.13.0](https://github.com/hostinger/fireactions-images/compare/ubuntu20.04/v0.12.0...ubuntu20.04/v0.13.0) (2025-09-15)
 
 
