@@ -8,6 +8,7 @@ Public container images for [Fireactions](https://github.com/hostinger/fireactio
 | --- | --- | --- |
 | `ubuntu20.04` | Based on Ubuntu 20.04. | `ghcr.io/hostinger/fireactions-images/ubuntu20.04:latest` |
 | `ubuntu22.04` | Based on Ubuntu 22.04. | `ghcr.io/hostinger/fireactions-images/ubuntu22.04:latest` |
+| `ubuntu24.04` | Based on Ubuntu 24.04. | `ghcr.io/hostinger/fireactions-images/ubuntu24.04:latest` |
 
 ## Contributing
 
@@ -23,7 +24,7 @@ To update an existing image, open a PR for the changes. The PR title must follow
 
 ### Releasing images
 
-Releases are automatically created after a successful push to the `main` branch. The release workflow builds and pushes the images to GitHub Container Registry.
+Images are automatically built and published to GitHub Container Registry after a successful push to the `main` branch.
 
 ## License
 
