@@ -29,8 +29,8 @@ jobs:
       id: pr
       uses: peter-evans/create-pull-request@v5
       with:
-        commit-message: 'chore: Bump Github actions self-hosted runner version'
-        title: 'feat: Bump Github actions self-hosted runner version'
+        commit-message: 'chore: Bump Github actions self-hosted runner version to v${{ env.RUNNER_LATEST }}'
+        title: 'feat: Bump Github actions self-hosted runner version to v${{ env.RUNNER_LATEST }}'
         body: |
           New version of Github actions self-hosted was [released](https://github.com/actions/runner/releases/tag/v${{ env.RUNNER_LATEST }})
         base: main
