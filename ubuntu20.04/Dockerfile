@@ -1,4 +1,4 @@
-FROM ghcr.io/hostinger/fireactions:1.0.0 AS fireactions
+FROM ghcr.io/hostinger/fireactions:2.0.0 AS fireactions
 FROM ubuntu:20.04
 
 ARG RUNNER_VERSION="2.331.0"
@@ -88,4 +88,4 @@ RUN echo "" > /etc/machine-id && echo "" > /var/lib/dbus/machine-id
 COPY overlay/etc /etc
 COPY --from=fireactions /usr/bin/fireactions /usr/bin/fireactions
 
-RUN systemctl enable fireactions.service
+RUN systemctl enable fireactions-agent.service

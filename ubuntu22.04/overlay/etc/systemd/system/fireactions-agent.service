@@ -1,13 +1,12 @@
 [Unit]
-Description=Fireactions
+Description=Fireactions Agent
 Documentation=https://github.com/hostinger/fireactions
 After=network.target
-SuccessAction=reboot
 
 [Service]
 Type=simple
 User=root
-ExecStart=/usr/bin/fireactions runner --log-level=info
+ExecStart=/usr/bin/fireactions agent --log-level=info
 Restart=on-failure
 RestartSec=5s
 
