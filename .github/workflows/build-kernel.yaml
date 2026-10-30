@@ -21,15 +21,15 @@ jobs:
       image: ghcr.io/konradasb/docker-kernel-build:e89c0048a44398df9e63081c20c2ffbdea06dae6
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
     - name: Login to Google Cloud Platform
-      uses: google-github-actions/auth@v1
+      uses: google-github-actions/auth@3a3c4c57d294ef65efaaee4ff17b22fa88dd3c69 # v1
       with:
         workload_identity_provider: projects/37500578404/locations/global/workloadIdentityPools/github/providers/hostinger
 
     - name: Setup Google Cloud SDK
-      uses: google-github-actions/setup-gcloud@v1
+      uses: google-github-actions/setup-gcloud@e30db14379863a8c79331b04a9969f4c1e225e0b # v1
       with:
         project_id: fireactions
 
@@ -46,7 +46,7 @@ jobs:
         mv vmlinux ../vmlinux
 
     - name: Upload Linux kernel to GCS
-      uses: google-github-actions/upload-cloud-storage@v1
+      uses: google-github-actions/upload-cloud-storage@e95a15f226403ed658d3e65f40205649f342ba2c # v1
       with:
         destination: fireactions/kernels/amd64/${{ matrix.version }}
         process_gcloudignore: false
@@ -63,15 +63,15 @@ jobs:
       image: ghcr.io/konradasb/docker-kernel-build:e89c0048a44398df9e63081c20c2ffbdea06dae6
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
     - name: Login to Google Cloud Platform
-      uses: google-github-actions/auth@v1
+      uses: google-github-actions/auth@3a3c4c57d294ef65efaaee4ff17b22fa88dd3c69 # v1
       with:
         workload_identity_provider: projects/37500578404/locations/global/workloadIdentityPools/github/providers/hostinger
 
     - name: Setup Google Cloud SDK
-      uses: google-github-actions/setup-gcloud@v1
+      uses: google-github-actions/setup-gcloud@e30db14379863a8c79331b04a9969f4c1e225e0b # v1
       with:
         project_id: fireactions
 
@@ -88,7 +88,7 @@ jobs:
         mv arch/arm64/boot/Image ../vmlinux
 
     - name: Upload Linux kernel to GCS
-      uses: google-github-actions/upload-cloud-storage@v1
+      uses: google-github-actions/upload-cloud-storage@e95a15f226403ed658d3e65f40205649f342ba2c # v1
       with:
         destination: fireactions/kernels/arm64/${{ matrix.version }}
         process_gcloudignore: false
